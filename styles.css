@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./bg-image-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px rgb(0,0,0);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #01036b;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+}
+
+.select-items{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select{
+    font-size: 15px;
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+select:checked{
+    padding-right: 20px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error-message{
+    margin-inline: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
+    display: none;
+}
